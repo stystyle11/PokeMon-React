@@ -1,0 +1,131 @@
+html {
+  border: 12px solid #107cda;
+}
+
+body {
+  @import url("https://fonts.cdnfonts.com/css/pokemon-solid");
+
+  font-family: "Pokemon Solid", sans-serif;
+  font-weight: 100;
+  font-size: 0.7em;
+  text-shadow: 2px 2px 2px #107cda;
+  color: #cece00;
+
+  background-color: #2196f3;
+  padding: 10px;
+  height: 100%;
+}
+.App {
+  text-align: center;
+  display: grid;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+}
+
+.logo {
+  grid-column: 1 / 10;
+  grid-row: 1 / 1;
+
+  max-width: 200px;
+  justify-self: center;
+}
+
+.titleText {
+  grid-column: 1 / 10;
+  grid-row: 2 / 3;
+  justify-self: center;
+}
+.search {
+  grid-column: 1 / 10;
+  grid-row: 3 / 4;
+  border: 10px solid #107cda;
+  border-radius: 30px;
+  padding: 8px 15px;
+}
+.searchNameButton {
+  grid-column: 1 / 10;
+  grid-row: 4 / 5;
+  padding: 10px;
+  justify-self: center;
+  border: 0;
+  width: 65%;
+  margin: 2.5%;
+  line-height: 2.5;
+  padding: 0 10px;
+  font-size: 0.7rem;
+  text-align: center;
+  color: #6b9ac4;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: inset 1px 1px 2px rgb(255 255 255 / 60%),
+    inset -1px -1px 2px rgb(0 0 0 / 60%);
+  font-weight: 600;
+}
+.pokeImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  grid-column: 3 / 7;
+  grid-row: 7 / 8;
+}
+.pokeName {
+  grid-column: 3 / 7;
+  grid-row: 5 / 6;
+}
+.pokeId {
+  grid-column: 3 / 7;
+  grid-row: 6 / 7;
+}
+.errorMessage {
+  grid-column: 1 / 10;
+  grid-row: 5 / 6;
+  justify-self: center;
+  font-size: 1.5em;
+  border: solid 5px red;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: white;
+}
+
+.previous {
+  grid-column: 1 / 2;
+  grid-row: 6 / 7;
+  padding: 10px;
+  justify-self: start;
+  border: 0;
+  margin: 2.5%;
+  max-height: 40px;
+  line-height: 1;
+
+  font-size: 0.5rem;
+  text-align: center;
+  color: #6b9ac4;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: inset 1px 1px 2px rgb(255 255 255 / 60%),
+    inset -1px -1px 2px rgb(0 0 0 / 60%);
+  font-weight: 600;
+}
+.next {
+  grid-column: 9 / 10;
+  grid-row: 6 / 7;
+  padding: 10px;
+  justify-self: end;
+  border: 0;
+  margin: 2.5%;
+  max-height: 40px;
+  line-height: 1;
+
+  font-size: 0.5rem;
+  text-align: center;
+  color: #6b9ac4;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: inset 1px 1px 2px rgb(255 255 255 / 60%),
+    inset -1px -1px 2px rgb(0 0 0 / 60%);
+  font-weight: 600;
+}
